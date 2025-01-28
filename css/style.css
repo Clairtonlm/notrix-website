@@ -18,7 +18,7 @@ body {
 
 /* Header and Navigation */
 .header {
-    background-color: var(--black);
+    background-color: black;
     box-shadow: none;
     position: fixed;
     width: 100%;
@@ -238,17 +238,68 @@ main {
 
 /* Footer */
 .footer {
-    background-color: var(--black);
+    background-color: black;
     color: var(--white);
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--primary);
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-info h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item i {
+    color: var(--primary);
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-item:hover {
+    color: var(--primary);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--primary);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.footer-links h4 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .footer-links ul {
@@ -278,6 +329,19 @@ main {
     .solutions-grid,
     .cases-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 }
 .partners-section {

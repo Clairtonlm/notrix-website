@@ -4,7 +4,7 @@
 }
 
 .header {
-    background-color: var(--black);
+    background-color: black;
 }
 
 .contact-hero {
@@ -100,6 +100,13 @@
 
 .nav-links a[href="contato.html"]::after {
     width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: var(--white);
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--primary);
 }
 
 @media (max-width: 768px) {
