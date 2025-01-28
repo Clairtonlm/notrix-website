@@ -343,7 +343,13 @@ main {
     .social-links {
         justify-content: center;
     }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
+
 .partners-section {
     background-color: var(--black);
     padding: 4rem 2rem;
@@ -436,4 +442,27 @@ main {
 
 .partners-section img:hover {
     filter: grayscale(0%);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-teste {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-teste:hover {
+    background-color: var(--primary);
+    color: var(--black);
+    transform: translateY(-2px);
 }
